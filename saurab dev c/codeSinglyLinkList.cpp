@@ -1,4 +1,5 @@
 #include<iostream>
+#include<conio.h>
 using namespace std;
 
    class singly_link{
@@ -9,7 +10,7 @@ using namespace std;
 		};
 	    node* head = NULL;
 	public:
-		void insert();
+		void insert(int &n);
 		
 	
 	};
@@ -25,9 +26,9 @@ void singly_link::insert(int &n){
 		while(ptr -> next_node_address != NULL){
 			ptr = ptr -> next_node_address;
 		}
-	    ptr -> next_node_address = new_node_address
+	    ptr -> next_node_address = new_node_address;
 	}
-}	
+}
 
 int main(){
 	int n;
